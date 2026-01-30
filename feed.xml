@@ -5,7 +5,13 @@
     <description>Messages vocaux familiaux (automatique)</description>
     <link>https://mamieaudio.github.io/mamie-voix-7f3a9c/</link>
     <language>fr-fr</language>
-    <lastBuildDate>Fri, 30 Jan 2026 23:09:23 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 30 Jan 2026 23:15:00 GMT</lastBuildDate>
+    <item>
+      <title>Message familial (31/01/2026 00:15)</title>
+      <guid isPermaLink="false">ade667a5-e3e7-41b4-b71b-a4e3cc01092b</guid>
+      <pubDate>Fri, 30 Jan 2026 23:15:00 GMT</pubDate>
+      <enclosure url="https://mamieaudio.github.io/mamie-voix-7f3a9c/audio/ade667a5-e3e7-41b4-b71b-a4e3cc01092b.wav" length="79738" type="audio/wav"/>
+    </item>
     <item>
       <title>Message familial (31/01/2026 00:09)</title>
       <guid isPermaLink="false">2d2e300c-0bb3-479d-8441-7ee47b1cd39e</guid>
