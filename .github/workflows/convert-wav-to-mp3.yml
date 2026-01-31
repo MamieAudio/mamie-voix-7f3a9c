@@ -4,25 +4,35 @@ on:
   push:
     paths:
       - "audio/*.wav"
+  workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: wav-to-mp3
+  cancel-in-progress: true
 
 jobs:
   convert:
     runs-on: ubuntu-latest
     if: github.actor != 'github-actions[bot]'
+
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
 
       - name: Install ffmpeg
         run: |
           sudo apt-get update
           sudo apt-get install -y ffmpeg
 
-      - name: Convert wav to mp3 (if needed)
+      - name: Convert WAV to MP3
         run: |
+          set -e
           shopt -s nullglob
           for wav in audio/*.wav; do
             mp3="${wav%.wav}.mp3"
@@ -30,22 +40,38 @@ jobs:
               echo "Converting $wav -> $mp3"
               ffmpeg -y -i "$wav" -codec:a libmp3lame -q:a 4 "$mp3"
             else
-              echo "Skipping $wav (mp3 already up-to-date)"
+              echo "Skipping $wav (already converted)"
             fi
           done
 
-      - name: Commit mp3 files
+      - name: Git status
+        run: git status --porcelain
+
+      - name: Commit & push MP3 (safe)
         run: |
+          set -e
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Ajoute les mp3 générés (s'il y en a)
           git add audio/*.mp3 || true
 
-          # Commit seulement s'il y a des changements
           if git diff --cached --quiet; then
-            echo "No MP3 to commit."
-          else
-            git commit -m "Auto: convert WAV to MP3"
-            git push
+            echo "No MP3 files to commit."
+            exit 0
           fi
+
+          git commit -m "Auto: convert WAV to MP3" || true
+
+          for i in 1 2 3 4 5; do
+            echo "Attempt $i: pull --rebase & push"
+            git pull --rebase origin main || true
+            if git push origin main; then
+              echo "Push successful."
+              exit 0
+            fi
+            echo "Push failed, retrying in 2s..."
+            sleep 2
+          done
+
+          echo "Push failed after retries."
+          exit 1
