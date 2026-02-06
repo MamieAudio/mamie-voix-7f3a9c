@@ -5,12 +5,12 @@
     <description>Livre audio en 7 parties (avance automatiquement)</description>
     <link>https://mamieaudio.github.io/mamie-voix-7f3a9c/</link>
     <language>fr-fr</language>
-    <lastBuildDate>Thu, 05 Feb 2026 10:10:18 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Feb 2026 10:07:00 +0000</lastBuildDate>
     <item>
-      <title>Livre – Partie 4</title>
-      <guid isPermaLink="false">lecture-partie-4-20260205</guid>
-      <pubDate>Thu, 05 Feb 2026 10:10:18 +0000</pubDate>
-      <enclosure url="https://github.com/MamieAudio/mamie-voix-7f3a9c/releases/download/livre/partie4.mp3" length="0" type="audio/mpeg"/>
+      <title>Livre – Partie 5</title>
+      <guid isPermaLink="false">lecture-partie-5-20260206</guid>
+      <pubDate>Fri, 06 Feb 2026 10:07:00 +0000</pubDate>
+      <enclosure url="https://github.com/MamieAudio/mamie-voix-7f3a9c/releases/download/livre/partie5.mp3" length="0" type="audio/mpeg"/>
     </item>
   </channel>
 </rss>
