@@ -5,7 +5,13 @@
     <description>Messages vocaux familiaux (automatique)</description>
     <link>https://mamieaudio.github.io/mamie-voix-7f3a9c/</link>
     <language>fr-fr</language>
-    <lastBuildDate>Thu, 12 Mar 2026 10:20:34 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Mar 2026 10:20:31 GMT</lastBuildDate>
+    <item>
+      <title>Message familial (18/03/2026 11:20)</title>
+      <guid isPermaLink="false">b38d30e3-3bff-405a-ba54-5cb3093229cf</guid>
+      <pubDate>Wed, 18 Mar 2026 10:20:31 GMT</pubDate>
+      <enclosure url="https://mamieaudio.github.io/mamie-voix-7f3a9c/audio/b38d30e3-3bff-405a-ba54-5cb3093229cf.mp3" length="177467" type="audio/mpeg"/>
+    </item>
     <item>
       <title>Message familial (12/03/2026 11:20)</title>
       <guid isPermaLink="false">08c8474a-47d2-4124-95db-53b54f040ba6</guid>
@@ -299,12 +305,6 @@
       <guid isPermaLink="false">4edaf09e-f651-474b-b331-15a12112d69e</guid>
       <pubDate>Fri, 30 Jan 2026 19:58:37 GMT</pubDate>
       <enclosure url="https://mamieaudio.github.io/mamie-voix-7f3a9c/audio/4edaf09e-f651-474b-b331-15a12112d69e.wav" length="54938" type="audio/wav"/>
-    </item>
-    <item>
-      <title>Message familial (30/01/2026 20:58)</title>
-      <guid isPermaLink="false">37ca49ed-c878-47c9-80bd-f8323a4f02b3</guid>
-      <pubDate>Fri, 30 Jan 2026 19:58:40 GMT</pubDate>
-      <enclosure url="https://mamieaudio.github.io/mamie-voix-7f3a9c/audio/37ca49ed-c878-47c9-80bd-f8323a4f02b3.wav" length="96058" type="audio/wav"/>
     </item>
   </channel>
 </rss>
