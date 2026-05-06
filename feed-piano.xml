@@ -5,12 +5,12 @@
     <description>Piano calme (un morceau différent chaque jour)</description>
     <link>https://mamieaudio.github.io/mamie-voix-7f3a9c/</link>
     <language>fr-fr</language>
-    <lastBuildDate>Tue, 05 May 2026 10:00:08 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 06 May 2026 10:14:40 +0000</lastBuildDate>
     <item>
       <title>Piano du jour</title>
-      <guid isPermaLink="false">piano-20260505</guid>
-      <pubDate>Tue, 05 May 2026 10:00:08 +0000</pubDate>
-      <enclosure url="https://mamieaudio.github.io/mamie-voix-7f3a9c/audio/piano/Piano 2.mp3" length="7470112" type="audio/mpeg"/>
+      <guid isPermaLink="false">piano-20260506</guid>
+      <pubDate>Wed, 06 May 2026 10:14:40 +0000</pubDate>
+      <enclosure url="https://mamieaudio.github.io/mamie-voix-7f3a9c/audio/piano/Piano 1.mp3" length="9429923" type="audio/mpeg"/>
     </item>
   </channel>
 </rss>
